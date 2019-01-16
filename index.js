@@ -14,6 +14,7 @@ const fortniteAPI = new fortnite([config.fEmail, config.fPassWord,
 
 client.on("ready", () => {
     console.log("Ready");
+    client.user.setActivity(`By Денчік | f!help`, {type: "PLAYING"});
 });
 
 client.on("message", async message => {
